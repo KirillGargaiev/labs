@@ -1,0 +1,79 @@
+package com.company;
+
+public class Main {
+    public static void main(String[] args) {
+        int Number = 9207;
+        int a = 1;
+        int b = 2;
+        float n = 3;
+        float m = 4;
+        double S = 0;
+
+       /* 
+       if (Number % 2 == 1) {
+            System.out.println("O1 - '-'");
+        } else {
+            System.out.println("O1 - '+'");
+        }
+        if (Number % 3 == 0) {
+            System.out.println("C - 0");
+        } else if (Number % 3 == 1) {
+            System.out.println("C - 1");
+        } else {
+            System.out.println("C - 2");
+        }
+        switch (Number % 5) {
+            case 1:
+                System.out.println("O2 - '/'");
+                break;
+            case 2:
+                System.out.println("O2 - '%'");
+                break;
+            case 3:
+                System.out.println("O2 - '+'");
+                break;
+            case 4:
+                System.out.println("O2 - '-'");
+                break;
+            case 0:
+                System.out.println("O2 - '*'");
+                break;
+        }
+        switch (Number % 7) {
+            case 1:
+                System.out.println("O3 - 'short'");
+                break;
+            case 2:
+                System.out.println("O3 - 'int'");
+                break;
+            case 3:
+                System.out.println("O3 - 'long'");
+                break;
+            case 4:
+                System.out.println("O3 - 'char'");
+                break;
+            case 5:
+                System.out.println("O3 - 'float'");
+                break;
+            case 6:
+                System.out.println("O3 - 'double'");
+                break;
+            case 0:
+                System.out.println("O3 - 'byte'");
+                break;
+        } 
+        */
+        if (n-a>=4 || n%4 == 0 || a%4 == 0 || (a+1)%4 == 0){
+            System.out.println("ZeroDivisionError");
+            System.exit(0);
+        }
+        for (int i = a; i <= n; i++) {
+            for (int j = b; j <= m; j++) {
+                S += ((double) i + j) / (i % 4);
+
+            }
+        }
+        System.out.println(S);
+
+    }
+}
